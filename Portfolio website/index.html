@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/4bdcbb0437.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Paschal Chikwendu</span><br>(Paschodes)</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- about me -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my_image.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a poised, detail-oriented and creative Frontend Web Developer with knowledge of HTML, CSS, JavaScript and React. Also, Experience in Python and Django knowledge. 
+                        Passionate about designing and developing visually appealing and user-friendly websites and applications. Possesses excellent problem-solving skills and the ability to work collaboratively in a team environment.
+                        I am also Positive and well-organized, with excellent written and verbal communication abilities which has a positive impact in collaboration with clients and team members.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Proficient in HTML, CSS and JavaScript</span></li>
+                            <li><span>Experience with React, Python, and Django.</span></li>
+                            <li><span>Experience with responsive design and cross-browser compatibility.</span></li>
+                            <li><span>Knowledge of Git and version control.</span></li>
+                            <li><span>Knowledge of Photoshop for Graphics Designing.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span> <br>Personal projects</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Completed (2016 - 2021)</span><br>B.Eng Metallurgical Engineering | Nnamdi Azikiwe University</li>
+                            <li><span>From 2022 - </span><br>Alx Software Engineering Programme | Alx</li>
+                            <li><span>Completed (2023)</span><br>The Complete Javascript Course | Udemy</li>
+                            <li><span>Completed (2022).</span>100 Days of Python | Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------- Services ---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front End</h2>
+                    <p>I design and create front-End web applications. I am proficient in HTML, CSS and JavaScript, and experienced in React. I have created several web applications with the above mentioned tools which you can find the source code in my github repo. Looking for an excellent front-End developer? Look no more, here i am, just a text/email away!!!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <!-- <i class="fa-regular fa-square-terminal"></i> -->
+                    <h2>Back End</h2>
+                    <p>I also design and create Back-End web applications. I am experienced in Python and Django, which ive used to crate several projects like the E-commerce website, you can find the source codes in my github repo. Are looking for an excellent Back-End developer? wel you are in the right place, you found me!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Graphic Design</h2>
+                    <p>I also have a no-code skill, I'm well experienced in graphic designing. Made several graphic and product designs and illustrations using Photoshop. looking for a good design, photo manipulation, logo, illustrations, or you need a design for your products, say no more, cause i got you covered! </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ portfolio ----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/budgetApp.png">
+                    <div class="layer">
+                        <h3>Budget App</h3>
+                        <p>A budgetApp website which calculates your monthly budget, which is mainly Front-End.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/frontend.png">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>The E-commerce website, where you can shop and order items online, which is mainly Back-End, using Python and Django.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/design.jpg">
+                    <div class="layer">
+                        <h3>Photoshop Illustration</h3>
+                        <p>Made an illustration design from scratch using photoshop tools.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------------------- container ------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> paschal.c.chikwendu@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 08130485982</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/ChikwenduPasch3"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://github.com/Paschodes"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/paschal-chikwendu"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/PaschalChikwendu CV.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ Paschodes</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCMSeTmgI0yKnkEbqfM_obh3vnugkywYNl3y0Dutigx2aB_wzJGaPoob0Te01n7gOc/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = 'Message sent successfully'
+                //after 5secs de message will be removed
+                setTimeout(function() {
+                    msg.innerHTML = ''
+                },5000)
+                //this will reset the form input field to empty
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
